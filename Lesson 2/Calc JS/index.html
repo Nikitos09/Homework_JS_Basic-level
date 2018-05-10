@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator on JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+ <!-- Окно калькулятора -->
+  <div class="calc" id="calc">
+    <div class="title">Calculator on JS</div>
+    <button class="window-action close" onclick="closeCalc()">x</button>
+    <button class="window-action turn" onclick="turnCalc()"></button>
+    <label>Num 1<input id="n1" type="number"></label>
+    <label>Num 2<input id="n2" type="number"></label>
+     <div class="action-row">
+      <button class="action" onclick="sum()">Sum</button>
+      <button class="action" onclick="dif()">Dif</button>
+      <button class="action" onclick="clearCalc()">Clear</button>
+    </div>
+    <hr>
+    <p class="result" id="result">Result:</p>
+  </div>
+   <!-- Окно открытия калькулятора -->
+  <div class="open-calc" id="openCalc">
+    <p>
+      The calculator was closed. Click on the button to open it.
+    </p>
+    <button class="action" onclick="openCalc()">Open</button>
+  </div>
+    <!-- Окно развертывания калькулятора -->
+  <div class="turn-calc" id="turnCalc">
+    <div class="calc">
+      <button class="window-action close" onclick="closeCalc()">x</button>
+      <button class="window-action turn" onclick="unTurnCalc()"></button>
+      <div class="title">Calculator on JS</div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

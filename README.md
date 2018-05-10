@@ -1,4 +1,5 @@
 # TeachMeSkills
 Repository for homework
 
-Hometask #1 { Slider CSS, Parallax }
+Lesson 1 {Parallax, Slider CSS}
+Lesson 2 {Calculator}
