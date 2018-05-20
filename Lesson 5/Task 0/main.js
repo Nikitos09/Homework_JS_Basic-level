@@ -16,7 +16,7 @@ obj.age = 25;
 
 
 function isObj(obj) {
-    (typeof(obj) == 'object') ? (obj.length === undefined ?  'Это объект' :   'Это массив') :
+    return (typeof(obj) == 'object') ? ((obj.length === undefined) ?  'Это объект' :   'Это массив') :
       'Это не объект и не массив';
 }
 alert(isObj(obj));

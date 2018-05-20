@@ -2,13 +2,16 @@ var text = prompt('Введите текст',);
 
 function vowelCount(text) {
     var textArr = text.toLowerCase().split(''),
-        length = textArr.length,
-        i, counter = 0;
-    for (i = 0; i < length; i++) {
-        if (textArr[i] == 'а' || textArr[i] == 'у' || textArr[i] == 'о' ||
-            textArr[i] == 'ы' || textArr[i] == 'и' || textArr[i] == 'э' ||
-            textArr[i] == 'я' || textArr[i] == 'ю' || textArr[i] == 'ё' || textArr[i] == 'е') {
-            counter++;
+        lowerArr = ['а', 'у', 'о', 'ы', 'и', 'э', 'я', 'ю', 'ё', 'е'],
+        textLength = textArr.length,
+        lowerLength = lowerArr.length,
+        i, j, counter = 0;
+
+    for (i = 0; i < textLength; i++) {
+        for (j = 0; j < lowerLength; j++) {
+            if (textArr[i] == lowerArr[j]) {
+                counter++
+            }
         }
 
     }
