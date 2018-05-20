@@ -6,7 +6,11 @@ function vowelCount(text) {
         textLength = textArr.length,
         lowerLength = lowerArr.length,
         i, j, counter = 0;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fb9ad117eef14fecbc24c035e54d5511e3918da4
     for (i = 0; i < textLength; i++) {
         for (j = 0; j < lowerLength; j++) {
             if (textArr[i] == lowerArr[j]) {
@@ -19,5 +23,6 @@ function vowelCount(text) {
 }
 
 alert(vowelCount(text));
+
 
 
