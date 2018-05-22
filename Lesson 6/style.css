@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    background-color: rgb(233, 245, 242);
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+input {
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    width: 80%;
+    height: 30px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #a6b5e8;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+}
+
+.table {
+    width: 60%;
+    height: auto;
+    border: 3px solid #fff;
+    border-collapse: collapse;
+    margin: 50px auto;
+    background-color: rgba(206, 215, 247);
+    box-shadow: 0 0 15px 5px rgba(168, 181, 178);
+}
+
+.table > tbody > tr {
+    height: 50px;
+    border: 3px solid #fff;
+}
+
+.table > tbody > tr > td {
+    border: 3px solid #fff;
+    width: 33%;
+    text-align: center;
+}
+
+.add-row {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
