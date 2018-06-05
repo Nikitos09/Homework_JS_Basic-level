@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chess board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="control-panel">
+    <h3>Chess board</h3>
+    <label for="size">Size cell (px) :</label><input id="size" type="number" value="50">
+    <label for="xValue">X:</label><input id="xValue" type="number">
+    <label for="yValue">Y:</label><input id="yValue" type="number">
+    <button type="button" disabled>Create</button>
+</div>
+<table onclick="reverse()" class="chess-board" id="chessBoard" >
+
+
+</table>
+<script src='main.js'></script>
+</body>
+</html>

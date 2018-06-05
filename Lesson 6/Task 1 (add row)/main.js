@@ -13,7 +13,7 @@ function addRow() {
 tBody.onclick = function (event) {
     var target = event.target;
 
-    if (target.id !== 'addRow') {
+    if (target.tagName === 'TD' && target.id !== 'addRow') {
         var text = target.innerText;
         target.innerHTML = '<input type="text" onkeypress="focusOutKey(event)" onblur = "focusOut(event);" value="' + text + '">';
 
@@ -26,6 +26,7 @@ function focusOut(event) {
     var target = event.target;
     target.parentNode.innerHTML = target.value;
 }
+
 
 function focusOutKey(event) {
     if (event.keyCode == 13) {
